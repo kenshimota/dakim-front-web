@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "predeploy": "VITE_HOSTNAME_API=http://localhost:8000/api/v1 npm run build",
-    "deploy": "gh-pages -d dist",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
