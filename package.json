@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "serve": "vite preview"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "latest",
+    "gh-pages": "^6.3.0",
     "vite": "latest",
     "vite-plugin-env-compatible": "^2.0.1"
   }
